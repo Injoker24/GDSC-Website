@@ -1,20 +1,3 @@
-
-function renderList(json) {
-    let itemCopy = document.getElementsByClassName("mySlides")[0].cloneNode(true);
-    let tempHTML = "";
-    json.forEach(movie => {
-        itemCopy.getElementsByClassName("title")[0].innerHTML = movie.title
-        itemCopy.getElementsByClassName("thumbnail")[0].src = movie.image
-        itemCopy.getElementsByClassName("desc")[0].innerHTML = movie.desc
-    });
-}
-
-fetch("movies.json")
-.then(response => response.json())
-.then(data => {
-    renderList(data)
-});
-
 var slideIndex = 1;
 showSlides(slideIndex);
 

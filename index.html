@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>IMBD</title>
+    <link rel = "stylesheet" href = "./style.css">
+    <link rel = "icon" type="image/gif" href = "./IMDB Square.png" sizes = "16x16">
+</head>
+
+<body style = "background-color: rgb(0, 0, 0);">
+    <div id = "side" class = "sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a class = "active" href="#">Home</a>
+        <a href="#">Movies</a>
+    </div>
+
+    <div id = "main">
+        <div class = "topnav">
+            <img src = "./IMDB Logo.png" alt = "logo" height = "64">
+            <div class = "menu" onclick = "openNav()">
+                <div class = "b1"></div>
+                <div class = "b2"></div>
+                <div class = "b3"></div>
+            </div>
+        </div>
+
+        <div id = "promoMovie" class = "promo">
+            <div class = "mySlides fade">
+                <img class = "thumbnail" src = "./Shang Chi.jpg" alt = "shang chi">
+                <div class="box-transparent">
+                    <h1 class = "title">test</h1>
+                    <p class = "desc">Lorem Ipsum</p>
+                </div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>        
+        </div>
+
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+    </div>  
+
+<script src ="./script.js"></script>
+
+</body>
+</html>

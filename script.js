@@ -10,7 +10,7 @@ function renderList(json) {
 }
 
 var movieData;
-fetch("./movies.json")
+fetch("movies.json")
 .then(response => response.json())
 .then(data => {
     movieData = data

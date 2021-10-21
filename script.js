@@ -9,12 +9,10 @@ function renderList(json) {
     });
 }
 
-var movieData;
 fetch("movies.json")
 .then(response => response.json())
 .then(data => {
-    movieData = data
-    renderList(retval)
+    renderList(data)
 });
 
 var slideIndex = 1;

@@ -1,6 +1,13 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
     box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
 body {
@@ -78,8 +85,8 @@ body {
 }
 
 .promo {
-    max-width: 1000px;
-    max-height: 800px;
+    max-width: 100%;
+    max-height: 70%;
     position: relative;
     margin: 0 auto;
 }
@@ -147,3 +154,89 @@ body {
     .active, .dot:hover {
         background-color: #717171;
     }
+
+.new-header {
+    color: #f6d129;
+    margin-left: 50px;
+    position: relative;
+}
+
+.new-release-container{
+    padding-left: 42px;
+}
+
+    .column {
+        float: left;
+        width: 140px;
+        margin-bottom: 16px;
+        padding: 0 8px;
+    }
+        .card {
+            background-color: rgb(37, 36, 36);
+        }
+
+            .card img {
+                width: 100%;
+            }
+
+            .desc-box {
+                padding: 16px;
+                padding-top: 0px;
+            }
+
+                .movie-title {
+                    color: #f2f2f2;
+                    font-size: smaller;
+                }
+
+                .link {
+                    border-radius: 4px;
+                    background-color: #f6d129;
+                    border: none;
+                    color: #181717;
+                    text-align: center;
+                    font-size: 10px;
+                    padding: 10px;
+                    width: 100%;
+                    transition: all 0.5s;
+                    cursor: pointer;
+                }
+
+                    .link span, .plot span {
+                        cursor: pointer;
+                        display: inline-block;
+                        position: relative;
+                        transition: 0.5s;
+                    }
+                    
+                    .link span:after, .plot span:after {
+                        content: '\00bb';
+                        position: absolute;
+                        opacity: 0;
+                        top: 0;
+                        right: -20px;
+                        transition: 0.5s;
+                    }
+                    
+                    .link:hover span, .plot:hover span {
+                        padding-right: 25px;
+                    }
+                    
+                    .link:hover span:after, .plot:hover span:after{
+                        opacity: 1;
+                        right: 0;
+                    }
+
+                .plot {
+                    border-radius: 4px;
+                    background-color: #000000;
+                    border: none;
+                    color: #f2f2f2;
+                    text-align: center;
+                    font-size: 10px;
+                    padding: 10px;
+                    width: 100%;
+                    transition: all 0.5s;
+                    cursor: pointer;
+                    margin-top: 8px;
+                }

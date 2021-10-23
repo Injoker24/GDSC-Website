@@ -7,13 +7,15 @@
 </head>
 
 <body style = "background-color: rgb(0, 0, 0);">
+    <!-- Side Navigation -->
     <div id = "side" class = "sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a class = "active" href="#">Home</a>
-        <a href="#">Movies</a>
+        <a style = "font-size: 5vw;" class = "active" href="#">Home</a>
+        <a style = "font-size: 5vw;" href ="#">Movies</a>
     </div>
 
     <div id = "main">
+        <!-- Top Navigation -->
         <div class = "topnav">
             <img src = "./IMDB Logo.png" alt = "logo" height = "64">
             <div class = "menu" onclick = "openNav()">
@@ -23,28 +25,29 @@
             </div>
         </div>
 
-        <div id = "promoMovie" class = "promo">
+        <!-- Promo -->
+        <div class = "promo">
             <div class = "mySlides fade">
-                <img class = "thumbnail" src = "./Shang Chi.jpg" alt = "shang chi">
+                <img src = "./Shang Chi.jpg" alt = "shang chi">
                 <div class="box-transparent">
-                    <h1>Shang Chi and the Legend of the Ten Rings</h1>
-                    <p>Martial-arts master Shang-Chi confronts the past he thought he left behind when he's drawn into the web of the mysterious Ten Rings organization.</p>
+                    <h1 style = "font-size: 3vw;">Shang Chi and the Legend of the Ten Rings</h1>
+                    <p style = "font-size: 2vw;">Martial-arts master Shang-Chi confronts the past he thought he left behind when he's drawn into the web of the mysterious Ten Rings organization.</p>
                 </div>
             </div>
 
             <div class = "mySlides fade">
-                <img class = "thumbnail" src = "./Dune.jpg" alt = "dune">
+                <img src = "./Dune.jpg" alt = "dune">
                 <div class="box-transparent">
-                    <h1>Dune</h1>
-                    <p>Dune is set in the distant future amidst a feudal interstellar society in which various noble houses control planetary fiefs. It tells the story of young Paul Atreides, whose family accepts the stewardship of the planet Arrakis.</p>
+                    <h1 style = "font-size: 3vw;">Dune</h1>
+                    <p style = "font-size: 2vw;">Dune is set in the distant future amidst a feudal interstellar society in which various noble houses control planetary fiefs. It tells the story of young Paul Atreides, whose family accepts the stewardship of the planet Arrakis.</p>
                 </div>
             </div>
 
             <div class = "mySlides fade">
-                <img class = "thumbnail" src = "./No Time to Die.jpg" alt = "james bond">
+                <img src = "./No Time to Die.jpg" alt = "james bond">
                 <div class="box-transparent">
-                    <h1>James Bond : No Time to Die</h1>
-                    <p>James Bond is enjoying a tranquil life in Jamaica after leaving active service. However, his peace is short-lived as his old CIA friend, Felix Leiter, shows up and asks for help. The mission to rescue a kidnapped scientist turns out to be far more treacherous than expected, leading Bond on the trail of a mysterious villain who's armed with a dangerous new technology.</p>
+                    <h1 style = "font-size: 3vw;">James Bond : No Time to Die</h1>
+                    <p style = "font-size: 2vw;">James Bond is enjoying a tranquil life in Jamaica after leaving active service. However, his peace is short-lived as his old CIA friend, Felix Leiter, shows up and asks for help. The mission to rescue a kidnapped scientist turns out to be far more treacherous than expected, leading Bond on the trail of a mysterious villain who's armed with a dangerous new technology.</p>
                 </div>
             </div>
 
@@ -59,7 +62,44 @@
             <span class="dot" onclick="currentSlide(2)"></span> 
             <span class="dot" onclick="currentSlide(3)"></span> 
         </div>
-    </div>  
+
+        <!-- New Releases-->
+        <h1 class = "new-header">New releases</h1>
+        <div class = "new-release-container">
+            <div class = "column">
+                <div class = "card">
+                    <img src = "https://m.media-amazon.com/images/M/MV5BOTY2NzFjODctOWUzMC00MGZhLTlhNjMtM2Y2ODBiNGY1ZWRiXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UY207_CR2,0,140,207_.jpg" alt = "FreeGuy">
+                    <div class = "desc-box">
+                        <p class = "movie-title">Free Guy</p>
+                        <button class = "link"><span>IMDB</span></button>
+                        <button class = "plot"><span>Plot</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "column">
+                <div class = "card">
+                    <img src = "https://m.media-amazon.com/images/M/MV5BYWQ2NzQ1NjktMzNkNS00MGY1LTgwMmMtYTllYTI5YzNmMmE0XkEyXkFqcGdeQXVyMjM4NTM5NDY@._V1_QL75_UX140_CR0,0,140,207_.jpg" alt = "JamesBond">
+                    <div class = "desc-box">
+                        <p class = "movie-title">No Time to Die</p>
+                        <button class = "link"><span>IMDB</span></button>
+                        <button class = "plot"><span>Plot</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "column">
+                <div class = "card">
+                    <img src = "https://m.media-amazon.com/images/M/MV5BYWE3MDVkN2EtNjQ5MS00ZDQ4LTliNzYtMjc2YWMzMDEwMTA3XkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_QL75_UX140_CR0,0,140,207_.jpg" alt = "SquidGame">
+                    <div class = "desc-box">
+                        <p class = "movie-title">Squid Game</p>
+                        <button class = "link"><span>IMDB</span></button>
+                        <button class = "plot"><span>Plot</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 <script src ="./script.js"></script>
 

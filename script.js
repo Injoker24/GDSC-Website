@@ -30,8 +30,8 @@ function showSlides(n) {
 }
 
 function openNav(){
-    document.getElementById("side").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
+    document.getElementById("side").style.width = "30vw";
+    document.getElementById("main").style.marginLeft = "30vw";
 }
 
 function closeNav() {

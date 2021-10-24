@@ -30,11 +30,22 @@ function showSlides(n) {
 }
 
 function openNav(){
-    document.getElementById("side").style.width = "30vw";
-    document.getElementById("main").style.marginLeft = "30vw";
+    document.getElementById("side").style.width = "20vw";
+    document.getElementById("main").style.marginLeft = "20vw";
 }
 
 function closeNav() {
     document.getElementById("side").style.width = "0";
     document.getElementById("main").style.marginLeft= "0";
+}
+
+function openModal(modalid) {
+
+    var modal = document.getElementById(modalid)
+    modal.style.display = "block";
+}
+
+function closeModal(modalid) {
+    var modal = document.getElementById(modalid)
+    modal.style.display = "none";
 }

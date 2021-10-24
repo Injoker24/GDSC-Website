@@ -19,7 +19,7 @@
     <div id = "main">
         <!-- Top Navigation -->
         <div class = "topnav">
-            <img src = "./IMDB Logo.png" alt = "logo" height = "64">
+            <img src = "./IMDB Logo.png" alt = "logo" height = "48">
             <div class = "menu" onclick = "openNav()">
                 <div class = "b1"></div>
                 <div class = "b2"></div>
@@ -73,77 +73,134 @@
                     <img src = "https://m.media-amazon.com/images/M/MV5BOTY2NzFjODctOWUzMC00MGZhLTlhNjMtM2Y2ODBiNGY1ZWRiXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UY207_CR2,0,140,207_.jpg" alt = "FreeGuy">
                     <div class = "desc-box">
                         <p class = "movie-title">Free Guy</p>
-                        <button class = "link"><span>IMDB</span></button>
-                        <button class = "plot"><span>Plot</span></button>
+                        <button class = "link" onclick="location.href='https://www.imdb.com/title/tt6264654/'" type = "button"><span>IMDB</span></button>
+                        <button class = "plot" onclick = "openModal('modal1')"><span>Plot</span></button>
                     </div>
                 </div>
             </div>
+
+                <div id="modal1" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick = "closeModal('modal1')">&times;</span>
+                        <h2>Free Guy</h2>
+                        <p>When a bank teller discovers he's actually a background player in an open-world video game, he decides to become the hero of his own story -- one that he can rewrite himself. In a world where there's no limits, he's determined to save the day his way before it's too late, and maybe find a little romance with the coder who conceived him.</p>
+                    </div>
+                </div>
 
             <div class = "column">
                 <div class = "card">
                     <img src = "https://m.media-amazon.com/images/M/MV5BYWQ2NzQ1NjktMzNkNS00MGY1LTgwMmMtYTllYTI5YzNmMmE0XkEyXkFqcGdeQXVyMjM4NTM5NDY@._V1_QL75_UX140_CR0,0,140,207_.jpg" alt = "JamesBond">
                     <div class = "desc-box">
                         <p class = "movie-title">No Time to Die</p>
-                        <button class = "link"><span>IMDB</span></button>
-                        <button class = "plot"><span>Plot</span></button>
+                        <button class = "link" onclick="location.href='https://www.imdb.com/title/tt2382320/'" type = "button"><span>IMDB</span></button>
+                        <button class = "plot" onclick = "openModal('modal2')"><span>Plot</span></button>
                     </div>
                 </div>
             </div>
+
+                <div id="modal2" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick = "closeModal('modal2')">&times;</span>
+                        <h2>No Time to Die</h2>
+                        <p>James Bond is enjoying a tranquil life in Jamaica after leaving active service. However, his peace is short-lived as his old CIA friend, Felix Leiter, shows up and asks for help. The mission to rescue a kidnapped scientist turns out to be far more treacherous than expected, leading Bond on the trail of a mysterious villain who's armed with a dangerous new technology.</p>
+                    </div>
+                </div>
 
             <div class = "column">
                 <div class = "card">
                     <img src = "https://m.media-amazon.com/images/M/MV5BYWE3MDVkN2EtNjQ5MS00ZDQ4LTliNzYtMjc2YWMzMDEwMTA3XkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_QL75_UX140_CR0,0,140,207_.jpg" alt = "SquidGame">
                     <div class = "desc-box">
                         <p class = "movie-title">Squid Game</p>
-                        <button class = "link"><span>IMDB</span></button>
-                        <button class = "plot"><span>Plot</span></button>
+                        <button class = "link" onclick="location.href='https://www.imdb.com/title/tt10919420/'" type = "button"><span>IMDB</span></button>
+                        <button class = "plot" onclick = "openModal('modal3')"><span>Plot</span></button>
                     </div>
                 </div>
             </div>
+
+                <div id="modal3" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick = "closeModal('modal3')">&times;</span>
+                        <h2>Squid Game</h2>
+                        <p>The series revolves around a contest where 456 players in deep financial debt put their lives at risk to play a series of children's games for the chance to win a ₩45.6 billion prize.</p>
+                    </div>
+                </div>
 
             <div class = "column">
                 <div class = "card">
                     <img src = "https://m.media-amazon.com/images/M/MV5BOGYwYTA5M2QtMTk3Zi00ZjdjLWFkNDUtYzg4MjM0ZGI0MGU1XkEyXkFqcGdeQXVyODIyOTEyMzY@._V1_QL75_UX140_CR0,0,140,207_.jpg" alt = "WhatIf">
                     <div class = "desc-box">
                         <p class = "movie-title">What If...?</p>
-                        <button class = "link"><span>IMDB</span></button>
-                        <button class = "plot"><span>Plot</span></button>
+                        <button class = "link" onclick="location.href='https://www.imdb.com/title/tt10168312/'" type = "button"><span>IMDB</span></button>
+                        <button class = "plot" onclick = "openModal('modal4')"><span>Plot</span></button>
                     </div>
                 </div>
             </div>
+
+                <div id="modal4" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick = "closeModal('modal4')">&times;</span>
+                        <h2>What If...?</h2>
+                        <p>The series explores alternate timelines in the multiverse that show what would happen if major moments from the MCU films occurred differently.</p>
+                    </div>
+                </div>
 
             <div class = "column">
                 <div class = "card">
                     <img src = "https://m.media-amazon.com/images/M/MV5BNGM3YzdlOWYtNjViZS00MTE2LWE1MWUtZmE2ZTcxZjcyMmU3XkEyXkFqcGdeQXVyODEyMTI1MjA@._V1_QL75_UX140_CR0,0,140,207_.jpg" alt = "TheSuicideSquad">
                     <div class = "desc-box">
                         <p class = "movie-title">The Suicide Squad</p>
-                        <button class = "link"><span>IMDB</span></button>
-                        <button class = "plot"><span>Plot</span></button>
+                        <button class = "link" onclick="location.href='https://www.imdb.com/title/tt6334354/'" type = "button"><span>IMDB</span></button>
+                        <button class = "plot" onclick = "openModal('modal5')"><span>Plot</span></button>
                     </div>
                 </div>
             </div>
+
+                <div id="modal5" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick = "closeModal('modal5')">&times;</span>
+                        <h2>The Suicide Squad</h2>
+                        <p>The government sends the most dangerous supervillains in the world -- Bloodsport, Peacemaker, King Shark, Harley Quinn and others -- to the remote, enemy-infused island of Corto Maltese. Armed with high-tech weapons, they trek through the dangerous jungle on a search-and-destroy mission, with only Col. Rick Flag on the ground to make them behave.</p>
+                    </div>
+                </div>
 
             <div class = "column">
                 <div class = "card">
                     <img src = "https://m.media-amazon.com/images/M/MV5BOWI5YTUxOWEtZmRiZS00ZmQxLWE2NzctYTRiODA2NzE1ZjczXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UX140_CR0,0,140,207_.jpg" alt = "Cruella">
                     <div class = "desc-box">
                         <p class = "movie-title">Cruella</p>
-                        <button class = "link"><span>IMDB</span></button>
-                        <button class = "plot"><span>Plot</span></button>
+                        <button class = "link" onclick="location.href='https://www.imdb.com/title/tt3228774/'" type = "button"><span>IMDB</span></button>
+                        <button class = "plot" onclick = "openModal('modal6')"><span>Plot</span></button>
                     </div>
                 </div>
             </div>
+
+                <div id="modal6" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick = "closeModal('modal6')">&times;</span>
+                        <h2>Cruella</h2>
+                        <p>Estella is a young and clever grifter who's determined to make a name for herself in the fashion world. She soon meets a pair of thieves who appreciate her appetite for mischief, and together they build a life for themselves on the streets of London. However, when Estella befriends fashion legend Baroness von Hellman, she embraces her wicked side to become the raucous and revenge-bent Cruella.</p>
+                    </div>
+                </div>
 
             <div class = "column">
                 <div class = "card">
                     <img src = "https://m.media-amazon.com/images/M/MV5BNWRmNzQ0N2QtZmJlYS00MWQ4LTlhY2ItODNmY2JkNGYyZTRlXkEyXkFqcGdeQXVyMDA4NzMyOA@@._V1_QL75_UX140_CR0,0,140,207_.jpg" alt = "Don'tBreathe2">
                     <div class = "desc-box">
                         <p class = "movie-title">Don't Breathe 2</p>
-                        <button class = "link"><span>IMDB</span></button>
-                        <button class = "plot"><span>Plot</span></button>
+                        <button class = "link" onclick="location.href='https://www.imdb.com/title/tt6246322/'" type = "button"><span>IMDB</span></button>
+                        <button class = "plot" onclick = "openModal('modal7')"><span>Plot</span></button>
                     </div>
                 </div>
             </div>
+
+                <div id="modal7" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick = "closeModal('modal7')">&times;</span>
+                        <h2>Don't Breathe 2</h2>
+                        <p>Blind veteran Norman Nordstrom has been hiding out for several years in an isolated cabin. He lives with a young girl and has recreated the family stolen from him by a drunken driver. Their quiet life together is soon shattered when a group of unseemly criminals kidnaps her. Norman is now forced to tap into even darker and more creative instincts in an effort to save her.</p>
+                    </div>
+                </div>
+
         </div>
     </div>
 
